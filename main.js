@@ -9,12 +9,14 @@ function dayOfWeek(day){
     case 5: return "Friday"
     case 6: return "Saturday"
     case 7: return "Sunday"
+    default: break
   }
 }
-function identifySeason(season){
-  switch(season){
+function identifySeason(month){
+  switch(month){
     case 1:
-    case 2: return "Winter"
+    case 2:
+    case 12: return "Winter"
     break
     case 3:
     case 4:
@@ -27,8 +29,6 @@ function identifySeason(season){
     case 9:
     case 10:
     case 11: return "Autumn"
-    break
-    case 12:  return "Winter"
     break
     default : "Return valid month."
   }
